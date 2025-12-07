@@ -1,0 +1,89 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Georgia';
+  src: local('Georgia-Regular'),
+        url('../fonts/Georgia.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: local('Georgia-Italic'),
+        url('../fonts/Georgia-Italic.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: local('Georgia-Bold'),
+        url('../fonts/Georgia-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: local('Georgia-BoldItalic'),
+        url('../fonts/Georgia-BoldItalic.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* vars */
+
+:root {
+  --color-main: #005bab;
+  --color-secondary: #f6c625;
+  --color-bg: white;
+}
+
+/* global */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus-visible {
+  outline: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Georgia', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--color-bg);
+  color: var(--color-main);
+}
+
+.container {
+  width: auto;
+  padding: 0 50px;
+  margin: 0;
+  font-style: normal;
+  line-height: 60px;
+  overflow: hidden;  
+}
