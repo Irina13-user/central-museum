@@ -1,0 +1,19 @@
+@media (min-width: 1680px) and (max-width: 1920px){
+	header {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 1440px) and (max-width: 1679px){
+	header {
+		font-size: 20px;
+		height: 100px;
+		background-size: 100% 100px;
+	}
+
+	.header__logo_img{
+		height: 40px;
+		aspect-ratio: 2.55;
+	}
+
+}
