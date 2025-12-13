@@ -11,9 +11,19 @@
 		background-size: 100% 100px;
 	}
 
-	.header__logo_img{
-		height: 40px;
-		aspect-ratio: 2.55;
+	.header__logo {
+		height: 80px;
+		width: 200px;
+		margin: 10px 0px 10px -23px;
+		background-size: 200px 80px; 
+	}
+
+	.header__block {
+		width: calc(100vw - 3 * var(--gap) - 200px);
+	}
+
+	.header__menu {
+		width: calc(100vw - 3 * var(--gap) - 200px);
 	}
 
 }
