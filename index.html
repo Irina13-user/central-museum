@@ -8,8 +8,7 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.svg">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/adaptive_desktop.css">
-  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/adaptive_desktop.css">  
 </head>
 
 <body>
@@ -38,6 +37,24 @@
       <div class="container">
         <h1>Центральный музей связи имени<br>А.&nbsp;С.&nbsp;Попова</h1>
         <div class="main-slider">
+          <div class="slides">
+            <div class="slide">
+              <img src="img/slide1_img.jpg" alt="Мастер-классы" class="slide__img">
+              <div class="slide__content">
+                <h3>Приглашаем на новогодние мастер классы</h3>
+                <p class="slide__text">Подарки и украшения своими руками. «Конь в пальто». «Секретная радиопередача». Подробнее</p>
+              </div>
+            </div>
+            <div class="slide"><img src="" alt="" class="slide__img"></div>
+            <div class="slide"><img src="" alt="" class="slide__img"></div>
+            <div class="slide"><img src="" alt="" class="slide__img"></div>
+            <div class="slide"><img src="" alt="" class="slide__img"></div>
+            <div class="slide"><img src="" alt="" class="slide__img"></div>
+            <div class="slide"><img src="" alt="" class="slide__img"></div>
+          </div>
+          <button id="prevButton"></button>
+          <button id="nextButton"></button>
+          <div class="dots"></div>
         </div>
       </div>
     </section>
@@ -48,28 +65,27 @@
         <h2>Обратная связь</h2>
         <div class="grid">
           <div class="feedback__content">
-            <img class="feedback__qr" src="" alt="">
-            <div>
-              <h3>Оценить услуги</h3>
-              <p></p>
+            <img class="feedback__qr" src="img/qr_feedback.jpg" alt="https://quality.mkrf.ru/mark/?orgid=0372100000565">
+            <div class="feedback__description">
+              <h3 class="feedback__header">Оценить качество услуг</h3>
+              <p class="feedback__text">Пройдите небольшой опрос в&nbsp;автоматизированной информационной системе</p>
             </div>
           </div>
           <div class="feedback__content">
-            <img class="feedback__qr" src="" alt="">
+            <img class="feedback__qr" src="img/qr_gu.jpg" alt="https://bus.gov.ru/rate/451622">
             <div>
-              <h3>Оценить услуги</h3>
-              <p></p>
+              <h3 class="feedback__header">Оценить условия услуг</h3>
+              <p class="feedback__text">Пройдите небольшой опрос с&nbsp;помощью портала Госуслуг</p>
             </div>
           </div>
           <div class="feedback__content">
-            <img class="feedback__qr" src="" alt="">
+            <img class="feedback__qr" src="img/qr_help.jpg" alt="https://qr.nspk.ru/AS1A000Q0S86V4679KSB3MQGVPD8TE5P?type=01&bank=100000000001&crc=8B6C">
             <div>
-              <h3>Помочь музею</h3>
-              <p></p>
+              <h3 class="feedback__header">Помочь музею</h3>
+              <p class="feedback__text">Отправьте пожертвование на развитие музея и расширение его возможностей</p>
             </div>
           </div>
         </div>
-        <!--http://quality.mkrf.ru/mark/?orgid=0372100000155-->
       </div>
     </section>
   </main>
@@ -97,6 +113,9 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 
 </html>
