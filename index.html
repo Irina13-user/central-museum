@@ -130,6 +130,26 @@
             </div>
           </div>
         </div>
+        <div class="options">
+          <h2>Опрос</h2>
+          <form action="" method="post">
+            <div class="form__content">
+              <div class="form__group">
+                <p class="form__text">Какой дизайн нравится больше?</p>
+                <label for="old-design"><input type="radio" id="old-design" name="design" value="old-design">Старый</label>
+                <label for="new-design"><input type="radio" id="new-design" name="design" value="new-design" checked>Новый</label>
+              </div>
+              <div class="form__group">
+                <p class="form__text">Что нравится в новой версии?</p>
+                <label for="check-design"><input type="checkbox" id="check-design" name="new-options" value="design">Дизайн</label>
+                <label for="check-order"><input type="checkbox" id="check-order" name="new-options" value="order">Расположение элементов</label>
+                <label for="check-color"><input type="checkbox" id="check-color" name="new-options" value="color">Цветовая схема</label>
+                <label for="check-animation"><input type="checkbox" id="check-animation" name="new-options" value="animation">Анимация</label>
+              </div>
+            </div>
+            <button type="submit">Отправить данные</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
