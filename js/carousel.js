@@ -4,11 +4,11 @@ let spinContainer = document.getElementById("spin-container");
 let aImages = document.getElementsByClassName("carousel__link");
 let basement = document.getElementById("basement");
 
-let radius = 300;
+let radius = 0.25 * window.innerWidth;
 let rotateSpeed = 50;
 let autoRotate = true;
-let imageWidth = 200;
-let imageHeight = 100;
+let imageWidth = 0.15 * window.innerWidth;
+let imageHeight = 0.075 * window.innerWidth;
 setTimeout(init, 500);
 
 spinContainer.style.width = imageWidth + "px";
