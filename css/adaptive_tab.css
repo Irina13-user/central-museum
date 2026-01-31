@@ -1,0 +1,157 @@
+@media (min-width: 940px) and (max-width: 1199px)
+{
+	:root {
+	  --gap: 25px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	header {
+		font-size: 12px;
+		height: 70px;
+		background-size: 100% 100px;
+	}
+
+	.header__logo {
+		height: 60px;
+		width: 150px;
+		margin: 10px 0px 10px -23px;
+		background-size: 150px 60px; 
+	}
+
+	.header__block {
+		width: calc(100vw - 3 * var(--gap) - 150px);
+	}
+
+	.header__menu {
+		width: calc(100vw - 3 * var(--gap) - 150px);
+	}
+
+	.main-slider {
+		height: 300px;
+	}
+
+	.slide__img {
+		height: 250px;
+	}
+
+	.slide__content {
+		height: 100px;
+		width: 500px;
+	}
+
+	.slide__text {
+		font-size: 12px;
+	}
+
+	#prevButton, #nextButton {
+		width: 35px;
+		height: 35px;
+		top: calc(50% - 20px);
+		background-size: 35px 35px;
+	}
+
+	#prevButton:hover, #nextButton:hover {
+		background-size: 35px 35px;
+	}
+
+
+	#carousel {
+		height: 700px;
+	}
+
+	.about__text {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+	.news_title{
+		margin-bottom: -200px;
+	}
+
+	.about__news {
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+
+	.feedback__qr {
+		margin-top: 1px;
+		margin-right: 2px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.feedback__text{
+	  font-size: 14px;
+	  line-height: 1.5em;
+	}
+
+	.form__text {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.form__group p {
+		font-size: 16px;
+		line-height: 1em;
+	}
+
+	.form__group label {
+		font-size: 16px;
+		line-height: 1.3em;
+	}
+
+	form button {
+		font-size: 16px;
+	}
+
+	footer {
+		height: 150px;
+	}
+
+	.footer__logo {
+		margin-top: 10px;
+		height: 90px;
+		width: 200px;
+		background-size: 200px 90px; 
+	}
+
+	.footer__left-column {
+		height: 60px;
+	}
+
+	.footer__right-column {
+		height: 60px;
+	}
+
+	.footer__text {
+		margin: 10px;
+		font-size: 12px;
+	}
+
+	.footer__icon {
+		margin: 10px 1px 0px 0px;
+		width: 15px;
+		height: 15px;
+	}
+
+	.footer__sn { 
+		width: 20px;
+		height: 20px;
+	}
+
+	.footer__link:first-child {
+		margin-right: 20px;
+	}
+
+}

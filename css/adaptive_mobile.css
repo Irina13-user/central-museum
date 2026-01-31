@@ -1,0 +1,350 @@
+@media (min-width: 768px) and (max-width: 939px)
+{
+	:root {
+	  --gap: 25px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 14px;
+	}
+
+	header {
+		font-size: 10px;
+		height: 70px;
+		background-size: 100% 100px;
+	}
+
+	.header__logo {
+		height: 60px;
+		width: 150px;
+		margin: 10px 0px 10px -23px;
+		background-size: 150px 60px; 
+	}
+
+	.header__block {
+		width: calc(100vw - 3 * var(--gap) - 150px);
+	}
+
+	.mobile__menu {
+		display: block;
+		width: 50%;
+		height: 100vh;
+	}
+
+	.mobile__menu__items {
+		display: none;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	#cover {
+		max-height: 400px;
+	}
+
+	.main-slider {
+		height: 200px;
+	}
+
+	.slide__img {
+		height: 200px;
+	}
+
+	.slide__content {
+		height: 70px;
+		width: 500px;
+		top: 30%;
+	}
+
+	.slide__text {
+		font-size: 10px;
+	}
+
+	#prevButton, #nextButton {
+		width: 35px;
+		height: 35px;
+		top: calc(50% - 20px);
+		background-size: 35px 35px;
+	}
+
+	#prevButton:hover, #nextButton:hover {
+		background-size: 35px 35px;
+	}
+
+
+	#carousel {
+		height: 700px;
+	}
+
+	.about__text {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+	.news_title{
+		margin-bottom: -200px;
+	}
+
+	.about__news {
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+
+	.feedback__qr {
+		margin-top: 1px;
+		margin-right: 2px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.feedback__text{
+	  font-size: 14px;
+	  line-height: 1.5em;
+	}
+
+	.form__text {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.form__group p {
+		font-size: 16px;
+		line-height: 1em;
+	}
+
+	.form__group label {
+		font-size: 16px;
+		line-height: 1.3em;
+	}
+
+	form button {
+		font-size: 16px;
+	}
+
+	footer {
+		padding: 0px var(--gap);
+		height: 85px;
+	}
+
+	.footer__logo {
+		margin-top: 10px;
+		margin-right: 5px;
+		height: 70px;
+		width: 135px;
+		background-size: 135px 60px; 
+	}
+
+	.footer__left-column {
+		margin-top: 10px;
+		height: 40px;
+	}
+
+	.footer__right-column {
+		margin-top: 10px;
+		height: 40px;
+	}
+
+	.footer__text {
+		margin: 5px;
+		font-size: 10px;
+		line-height: 1.2em;
+	}
+
+	.footer__icon {
+		margin: 3px 1px 0px 0px;
+		width: 15px;
+		height: 15px;
+	}
+
+	.footer__sn { 
+		width: 20px;
+		height: 20px;
+	}
+
+	.footer__link:first-child {
+		margin-right: 20px;
+	}
+
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+	:root {
+	  --gap: 25px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 10px;
+	}
+
+	header {
+		font-size: 10px;
+		height: 50px;
+		background-size: 100% 100px;
+	}
+
+	.header__logo {
+		height: 60px;
+		width: 150px;
+		margin: 10px 0px 10px -23px;
+		background-size: 150px 60px; 
+	}
+
+	.header__block {
+		width: calc(100vw - 3 * var(--gap) - 150px);
+	}
+
+	.header__menu {
+		width: calc(100vw - 3 * var(--gap) - 150px);
+	}
+
+	#cover {
+		max-height: 400px;
+	}
+
+	.main-slider {
+		height: 200px;
+	}
+
+	.slide__img {
+		height: 200px;
+	}
+
+	.slide__content {
+		height: 70px;
+		width: 500px;
+		top: 30%;
+	}
+
+	.slide__text {
+		font-size: 10px;
+	}
+
+	#prevButton, #nextButton {
+		width: 35px;
+		height: 35px;
+		top: calc(50% - 20px);
+		background-size: 35px 35px;
+	}
+
+	#prevButton:hover, #nextButton:hover {
+		background-size: 35px 35px;
+	}
+
+
+	#carousel {
+		height: 700px;
+	}
+
+	.about__text {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+	.news_title{
+		margin-bottom: -200px;
+	}
+
+	.about__news {
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+
+	.feedback__qr {
+		margin-top: 1px;
+		margin-right: 2px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.feedback__text{
+	  font-size: 14px;
+	  line-height: 1.5em;
+	}
+
+	.form__text {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.form__group p {
+		font-size: 16px;
+		line-height: 1em;
+	}
+
+	.form__group label {
+		font-size: 16px;
+		line-height: 1.3em;
+	}
+
+	form button {
+		font-size: 16px;
+	}
+
+	footer {
+		padding: 0px var(--gap);
+		height: 85px;
+	}
+
+	.footer__logo {
+		margin-top: 10px;
+		margin-right: 5px;
+		height: 70px;
+		width: 135px;
+		background-size: 135px 60px; 
+	}
+
+	.footer__left-column {
+		margin-top: 10px;
+		height: 40px;
+	}
+
+	.footer__right-column {
+		margin-top: 10px;
+		height: 40px;
+	}
+
+	.footer__text {
+		margin: 5px;
+		font-size: 10px;
+		line-height: 1.2em;
+	}
+
+	.footer__icon {
+		margin: 3px 1px 0px 0px;
+		width: 15px;
+		height: 15px;
+	}
+
+	.footer__sn { 
+		width: 20px;
+		height: 20px;
+	}
+
+	.footer__link:first-child {
+		margin-right: 20px;
+	}
+
+}
+
+@media (max-width: 479px)
+{
+
+}

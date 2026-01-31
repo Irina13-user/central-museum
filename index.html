@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/adaptive_desktop.css">  
+  <link rel="stylesheet" type="text/css" href="css/adaptive_tab.css">
+  <link rel="stylesheet" type="text/css" href="css/adaptive_mobile.css">
 </head>
 
 <body>
@@ -21,6 +23,18 @@
         <p class="header__email">email: info@rustelecom-museum.ru</p>
         <p class="header__tel">заказ экскурсий: <span class="header__tel_number">+7(812)571-00-60</span>, <span class="header__tel_number">+7(921)950-00-36</span></p>
       </div>
+      <nav class="mobile__menu">
+        <button class="burger-button" id="burger-button"></button>
+        <div class="mobile__menu__items" id="burger-menu">
+          <a href="#" class="header__link">МУЗЕЙ</a>
+          <a href="#" class="header__link">ПОСЕТИТЕЛЯМ</a>
+          <a href="#" class="header__link">УСЛУГИ</a>
+          <a href="#" class="header__link">ПРОФЕССИОНАЛАМ</a>
+          <a href="#" class="header__link">ПАРТНЁРАМ</a>
+          <a href="#" class="header__link">КОНТАКТЫ</a>
+          <a href="#" class="header__link">КАЛЕНДАРЬ</a>
+        </div>
+      </nav>
       <nav class="header__menu">
         <a href="#" class="header__link">МУЗЕЙ</a>
         <a href="#" class="header__link">ПОСЕТИТЕЛЯМ</a>
@@ -224,6 +238,7 @@
   </footer>
 
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/burger.js"></script>
   <script type="text/javascript" src="js/carousel.js"></script>
 
 </body>
