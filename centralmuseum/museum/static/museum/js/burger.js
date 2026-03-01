@@ -4,13 +4,13 @@ let isOpenMenu = false;
 
 function toggleMenu() {
 	if (!isOpenMenu) {
-		burgerButton.style.backgroundImage = "url('../img/burger-open.svg')";
+		burgerButton.style.backgroundImage = "url('/static/museum/img/burger-open.svg')";
 		menu.style.display = "flex";
 		isOpenMenu = true;
 		document.body.style.overflow = "hidden";
 	}
 	else {
-		burgerButton.style.backgroundImage = "url('../img/burger-close.svg')";
+		burgerButton.style.backgroundImage = "url('/static/museum/img/burger-close.svg')";
 		menu.style.display = "none";
 		isOpenMenu = false;
 		document.body.style.overflow = "auto";

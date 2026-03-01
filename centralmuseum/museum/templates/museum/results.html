@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты опроса</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'museum/img/favicon.svg' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'museum/css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'museum/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'museum/css/adaptive_desktop.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'museum/css/adaptive_tab.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'museum/css/adaptive_mobile.css' %}">
+</head>
+<body>
+    <main>
+        <section id="cover">
+          <div class="container">
+            <h1>Результаты опроса</h1>
+            <p class="about__text">Всего голосов: {{ count }}</p>
+            <p class="about__text">Голосов за старый дизайн: {{ old_design }}</p>
+            <p class="about__text">Голосов за новый дизайн: {{ new_design }}</p>
+            <p class="about__text">Голосов за наличие нового дизайна: {{ design_options }} ({{ design_options_percentage }})%</p>
+            <p class="about__text">Голосов за расположение элементов: {{ order_options }} ({{ order_options_percentage }})%</p>
+            <p class="about__text">Голосов за цветовую схему: {{ color_options }} ({{ color_options_percentage }})%</p>
+            <p class="about__text">Голосов за новую анимацию: {{ animation_options }} ({{ animation_options_percentage }})%</p>
+            <p class="about__text">Голосов за наличие 3D моделей (AR): {{ model_options }} ({{ model_options_percentage }})%</p>
+          </div>
+        </section>
+    </main>
+</body>
+</html>

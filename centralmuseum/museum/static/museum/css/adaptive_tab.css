@@ -80,9 +80,13 @@
 	}
 
 	.about__news {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 1.5em;
 	}
+
+	model-viewer {
+        height: 50vh;
+    }
 
 	.feedback__qr {
 		margin-top: 1px;
@@ -95,6 +99,10 @@
 	  font-size: 14px;
 	  line-height: 1.5em;
 	}
+
+	.form__content * {
+        font-size: 14px;
+    }
 
 	.form__text {
 		font-size: 14px;

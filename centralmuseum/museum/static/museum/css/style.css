@@ -132,9 +132,12 @@ h3 {
 .grid2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-  font-size: 0px;
 }
 
+.grid22 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 
 .grid3 {
 	display: grid;
@@ -143,6 +146,23 @@ h3 {
 
 .indented {
 	text-indent: 40px;
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+figcaption {
+    display: block;
+    height: auto;
+}
+
+figcaption a {
+    display: inline-block;
 }
 
 /* header */
@@ -355,6 +375,10 @@ header {
 
 
 /* carousel */
+#mobile-news {
+    display: none;
+}
+
 .news_title{
   margin-bottom: -300px;
 }
@@ -412,6 +436,12 @@ header {
 	transform: translate(-50%, -50%) rotateX(90deg);
 }
 
+/* modelviewer */
+model-viewer {
+    height: 75vh;
+    width: 100%;
+}
+
 /* feedback */
 .feedback__content {
 	display: flex;
@@ -447,7 +477,14 @@ header {
 .form__content {
   display: flex;
   flex-direction: row;
+}
 
+.form__content * {
+    font-size: 32px;
+}
+
+.form__content div {
+    width: 100%;
 }
 
 .form__group{

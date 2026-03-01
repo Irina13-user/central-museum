@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Центральный музей связи им. А. С. Попова</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'museum/img/favicon.svg' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'museum/css/normalize.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'museum/css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'museum/css/adaptive_desktop.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'museum/css/adaptive_tab.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'museum/css/adaptive_mobile.css' %}">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header__logo">
+      <a href="/" class="header__logo_link"></a>
+    </div>
+    <div class="header__content">
+      <div class="header__block">      
+        <p class="header__email">email: info@rustelecom-museum.ru</p>
+        <p class="header__tel">заказ экскурсий: <span class="header__tel_number">+7(812)571-00-60</span>, <span class="header__tel_number">+7(921)950-00-36</span></p>
+      </div>
+      <nav class="mobile__menu">
+        <div class="mobile__menu-top">
+          <p class="header__email">email: info@rustelecom-museum.ru</p>
+          <p class="header__tel">заказ экскурсий: <span class="header__tel_number">+7(812)571-00-60</span>, <span class="header__tel_number">+7(921)950-00-36</span></p>
+          <button class="burger-button" id="burger-button"></button>
+        </div>
+        <div class="mobile__menu__items" id="burger-menu">
+          <a href="https://www.rustelecom-museum.ru/about/" class="mobile__menu__item">МУЗЕЙ</a>
+          <a href="https://www.rustelecom-museum.ru/visit/" class="mobile__menu__item">ПОСЕТИТЕЛЯМ</a>
+          <a href="https://www.rustelecom-museum.ru/uslugi/" class="mobile__menu__item">УСЛУГИ</a>
+          <a href="https://www.rustelecom-museum.ru/specialists/" class="mobile__menu__item">ПРОФЕССИОНАЛАМ</a>
+          <a href="https://www.rustelecom-museum.ru/partners/" class="mobile__menu__item">ПАРТНЁРАМ</a>
+          <a href="https://www.rustelecom-museum.ru/kontakty/" class="mobile__menu__item">КОНТАКТЫ</a>
+          <a href="https://www.rustelecom-museum.ru/specialists/calendar/" class="mobile__menu__item">КАЛЕНДАРЬ</a>
+        </div>
+      </nav>
+      <nav class="header__menu">
+        <a href="https://www.rustelecom-museum.ru/about/" class="header__link">МУЗЕЙ</a>
+        <a href="https://www.rustelecom-museum.ru/visit/" class="header__link">ПОСЕТИТЕЛЯМ</a>
+        <a href="https://www.rustelecom-museum.ru/uslugi/" class="header__link">УСЛУГИ</a>
+        <a href="https://www.rustelecom-museum.ru/specialists/" class="header__link">ПРОФЕССИОНАЛАМ</a>
+        <a href="https://www.rustelecom-museum.ru/partners/" class="header__link">ПАРТНЁРАМ</a>
+        <a href="https://www.rustelecom-museum.ru/kontakty/" class="header__link">КОНТАКТЫ</a>
+        <a href="https://www.rustelecom-museum.ru/specialists/calendar/" class="header__link">КАЛЕНДАРЬ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="cover">
+      <div class="container">
+        <h1>Центральный музей связи имени<br>А.&nbsp;С.&nbsp;Попова</h1>
+        <div class="main-slider">
+          <div class="slides">
+            <div class="slide">
+              <img src="{% static 'museum/img/slide1_img.jpg' %}" alt="Мастер-классы" class="slide__img">
+              <div class="slide__content">
+                <h3>Приглашаем на новогодние мастер классы</h3>
+                <p class="slide__text">Подарки и украшения своими руками. «Конь в пальто». «Секретная радиопередача».</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="{% static 'museum/img/slide2_img.jpg' %}" alt="Экскурсия по дворцу А.А. Безбородко" class="slide__img">
+              <div class="slide__content">
+                <h3>Экскурсия по дворцу А.А. Безбородко</h3>
+                <p class="slide__text">Заказ билетов по телефону 571-00-60. По субботам в 14:00 можно присоединиться к сборной экскурсии (заказ билетов на сайте музея).</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="{% static 'museum/img/slide3_img.jpg' %}" alt="День рождения в музее" class="slide__img">
+              <div class="slide__content">
+                <h3>День рождения в музее</h3>
+                <p class="slide__text">Центральный музей связи имени А.С. Попова приглашает отпраздновать день рождения ребёнка весело и познавательно. Подробнее по телефону: (812) 571-00-60.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="{% static 'museum/img/slide4_img.jpg' %}" alt="Для детей с родителями" class="slide__img">
+              <div class="slide__content">
+                <h3>Для детей с родителями</h3>
+                <p class="slide__text">Самостоятельное путешествие для детей и родителей, полное загадок и находок! Маршрутный лист спрашивайте в кассе музея.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="{% static 'museum/img/slide5_img.jpg' %}" alt="ТАЙНА ПОЧТОВОГО ЯЩИКА" class="slide__img">
+              <div class="slide__content">
+                <h3>«ТАЙНА ПОЧТОВОГО ЯЩИКА» – для детей 6 – 11 лет</h3>
+                <p class="slide__text">Записаться на экскурсию можно по телефону: (812) 571-00-60 со вторника по субботу.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="{% static 'museum/img/slide6_img.jpg' %}" alt="ТАЙНА ЗА СЕМЬЮ ПЕЧАТЯМИ. ИСТОРИЯ ШИФРОВ И КОДОВ" class="slide__img">
+              <div class="slide__content">
+                <h3>«ТАЙНА ЗА СЕМЬЮ ПЕЧАТЯМИ. ИСТОРИЯ ШИФРОВ И КОДОВ» – для детей от 10 лет.</h3>
+                <p class="slide__text">Записаться на экскурсию можно по телефону: (812) 571-00-60 со среды по воскресенье.</p>
+              </div>
+            </div>
+          </div>
+          <button id="prevButton"></button>
+          <button id="nextButton"></button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2>О музее</h2>
+        <p class="about__text indented">Музей был основан 11&nbsp;сентября&nbsp;1872&nbsp;года как Телеграфный музей по&nbsp;инициативе директора Телеграфного департамента Карла Людерса. У истоков его создания и развития стоял Николай Евстафьевич Славинский, проработавший первым директором музея до&nbsp;1911&nbsp;года. Своим рождением музей обязан первой в&nbsp;России политехнической выставке 1872&nbsp;года, на которой экспонировались телеграфный и&nbsp;почтовый отделы.</p>
+        <div class="about__content grid2">
+          <div class="about__cell">
+            <a href="https://www.rustelecom-museum.ru/visit/plan/virtualnyy-muzey/" class="about__link"><h2>Виртуальный музей</h2></a>      
+          </div>
+          <div class="about__cell">
+            <a href="https://rustelecom-museum.ru/visit/exhibitions/virtualnye-vystavki/" class="about__link"><h2>Виртуальные выставки и экскурсии</h2></a>
+          </div>
+        </div>
+        <div class="about__content grid2">
+          <div class="about__cell">
+            <video class="about__video" controls><source src="https://rustelecom-museum.ru/MediaObjects/video/Музей связи.mp4" type="video/mp4"></video>
+          </div>
+          <div class="about__cell">
+            <video class="about__video" controls><source src="https://rustelecom-museum.ru/MediaObjects/video/ЦМС_имени_А.С.Попова.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+        <p class="about__text">Ждем вас с 10:30 до 18:00, касса закрывается в 17:30.</p>
+        <p class="about__text">Выходной день: понедельник.</p>
+        <p class="about__text">Адрес: Санкт-Петербург, Почтамтский переулок, дом 4</p>
+      </div>
+    </section>
+    <section id="mobile-news">
+      <div class="container">
+        <h2 class="news_title">Новости</h2>
+        <div class="mobile-news__content">
+          <figure>
+            <img src="{% static 'museum/img/carousel1_img.jpg' %}" alt="Проведение бала для кадетов" class="carousel__img"/>
+            <figcaption><a href="https://www.rustelecom-museum.ru/news/1094/" class="about__news">В Большом парадном зале Центрального музея связи прошел Новогодний кадетский бал...</a></figcaption>
+          </figure>
+          <figure>
+            <img src="{% static 'museum/img/carousel2_img.jpg' %}" alt="Поздравляем с Рождеством!" class="carousel__img"/>
+            <figcaption><a href="https://www.rustelecom-museum.ru/news/1088/" class="about__news">Дорогие друзья! Поздравляем вас с Рождеством!</a></figcaption>
+          </figure>
+          <figure>
+            <img src="{% static 'museum/img/carousel3_img.jpg' %}" alt="Церемония открытия новой выставки" class="carousel__img"/>
+            <figcaption><a href="https://www.rustelecom-museum.ru/news/1096/" class="about__news">В Центральном музее связи прошла торжественная церемония открытия выставки «Отражение: 1941–1945»</a></figcaption>
+          </figure>
+          <figure>
+            <img src="{% static 'museum/img/carousel4_img.jpg' %}" alt="Прорыв блокадного кольца" class="carousel__img"/>
+            <figcaption><a href="https://www.rustelecom-museum.ru/news/1093/" class="about__news">18 января 1943 года в ходе операции «Искра» советские войска прорвали блокадное кольцо, сковывавшее Ленинград</a></figcaption>
+          </figure>
+          <figure>
+            <img src="{% static 'museum/img/carousel5_img.jpg' %}" alt="Проведение бала для кадетов" class="carousel__img"/>
+            <figcaption><a href="https://www.rustelecom-museum.ru/news/1094/" class="about__news">О Новогоднием кадетском бале для учащихся кадетского корпуса СК РФ имени Маршала Г.К. Жукова</a></figcaption>
+          </figure>
+          <figure>
+            <img src="{% static 'museum/img/carousel6_img.jpg' %}" alt="встреча Сергея Иванюка с Романом Рябинцевым" class="carousel__img"/>
+            <figcaption><a href="https://www.rustelecom-museum.ru/news/1091/" class="about__news">Встреча директора Центрального музея связи Сергея Иванюка с директором Штаб‑квартиры РГО Романом Рябинцевым</a></figcaption>
+          </figure>
+          <figure>
+            <img src="{% static 'museum/img/carousel7_img.jpg' %}" alt="год 600-летия Соловецкого монастыря" class="carousel__img"/>
+            <figcaption><a href="https://www.rustelecom-museum.ru/news/1090/" class="about__news">2029 год – год 600-летия Соловецкого монастыря: идет активная подготовка к юбилею</a></figcaption>
+          </figure>
+          <figure>
+            <img src="{% static 'museum/img/carousel8_img.jpg' %}" alt="передача медальона красноармейца Болталова родственникам" class="carousel__img"/>
+            <figcaption><a href="https://www.rustelecom-museum.ru/news/1089/" class="about__news">В Центральном музее связи состоялась передача медальона красноармейца Болталова Сергея Дмитриевича его родственникам</a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="news">
+      <div class="container visible">
+        <h2 class="news_title">Новости</h2>
+        <div id="carousel">
+          <div id="drag-container">
+            <div id="spin-container">
+              <a href="https://www.rustelecom-museum.ru/news/1094/" class="carousel__link"><img src="{% static 'museum/img/carousel1_img.jpg' %}" alt="Проведение бала для кадетов" class="carousel__img" />
+                <p class="about__news">В Большом парадном зале Центрального музея связи прошел Новогодний кадетский бал...</p>
+              </a>
+              <a href="https://www.rustelecom-museum.ru/news/1088/" class="carousel__link"><img src="{% static 'museum/img/carousel2_img.jpg' %}" alt="Поздравляем с Рождеством!" class="carousel__img" />
+                <p class="about__news">Дорогие друзья! Поздравляем вас с Рождеством!</p>
+              </a>
+              <a href="https://www.rustelecom-museum.ru/news/1096/" class="carousel__link"><img src="{% static 'museum/img/carousel3_img.jpg' %}" alt="Церемония открытия новой выставки" class="carousel__img" />
+                <p class="about__news">В Центральном музее связи прошла торжественная церемония открытия выставки «Отражение: 1941–1945»</p>
+              </a>
+              <a href="https://www.rustelecom-museum.ru/news/1093/" class="carousel__link"><img src="{% static 'museum/img/carousel4_img.jpg' %}" alt="Прорыв блокадного кольца" class="carousel__img" />
+                <p class="about__news">18 января 1943 года в ходе операции «Искра» советские войска прорвали блокадное кольцо, сковывавшее Ленинград</p>
+              </a>
+              <a href="https://www.rustelecom-museum.ru/news/1094/" class="carousel__link"><img src="{% static 'museum/img/carousel5_img.jpg' %}" alt="Проведение бала для кадетов" class="carousel__img" />
+                <p class="about__news">О Новогоднием кадетском бале для учащихся кадетского корпуса СК РФ имени Маршала Г.К. Жукова</p>
+              </a>
+              <a href="https://www.rustelecom-museum.ru/news/1091/" class="carousel__link"><img src="{% static 'museum/img/carousel6_img.jpg' %}" alt="встреча Сергея Иванюка с Романом Рябинцевым" class="carousel__img" />
+                <p class="about__news">Встреча директора Центрального музея связи Сергея Иванюка с директором Штаб‑квартиры РГО Романом Рябинцевым</p>
+              </a>
+              <a href="https://www.rustelecom-museum.ru/news/1090/" class="carousel__link"><img src="{% static 'museum/img/carousel7_img.jpg' %}" alt="год 600-летия Соловецкого монастыря" class="carousel__img" />
+                <p class="about__news">2029 год – год 600-летия Соловецкого монастыря: идет активная подготовка к юбилею</p>
+              </a>
+              <a href="https://www.rustelecom-museum.ru/news/1089/" class="carousel__link"><img src="{% static 'museum/img/carousel8_img.jpg' %}" alt="передача медальона красноармейца Болталова родственникам" class="carousel__img" />
+                <p class="about__news">В Центральном музее связи состоялась передача медальона красноармейца Болталова Сергея Дмитриевича его родственникам</p>
+              </a>
+            </div>
+            <div id="basement"></div>
+          </div>          
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2>Экспонаты нашего музея</h2>
+        <p class="about__text">Ознакомьтесь с экспонатами действующей выставки музея при помощи технологий дополненной реальности.</p>
+        <div class="about__content grid22">
+          <model-viewer src="{% static 'museum/img/satellite.glb' %}" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="-54.33deg 180deg 24.37m" field-of-view="30deg">
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+          </model-viewer>
+          <div class="model__content">
+            <p class="about__text">«Спутник-1» — первый в мире искусственный спутник Земли, советский космический аппарат, запущенный на орбиту 4 октября 1957 года (во время Международного геофизического года).</p>
+            <p class="about__text">Кодовое обозначение спутника — «ПС-1» («Простейший Спутник-1»). Запуск был осуществлён с 5-го научно-исследовательского полигона Министерства обороны СССР «Тюра-Там» (получившего впоследствии открытое наименование космодром «Байконур») на ракете-носителе «Спутник», созданной на базе межконтинентальной баллистической ракеты «Р-7».</p>
+            <p class="about__text">Над созданием искусственного спутника Земли, во главе с основоположником практической космонавтики С. П. Королёвым, работали учёные М. В. Келдыш, М. К. Тихонравов, М. С. Рязанский, О. Г. Ивановский, Н. С. Лидоренко, Г. Ю. Максимов, В. И. Лаппо, К. И. Грингауз, Б. С. Чекунов, А. В. Бухтияров, Н. А. Бересков и многие другие.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="feedback">
+      <div class="container">
+        <h2>Обратная связь</h2>
+        <div class="grid3">
+          <div class="feedback__content">
+            <img class="feedback__qr" src="{% static 'museum/img/qr_feedback.jpg' %}" alt="https://quality.mkrf.ru/mark/?orgid=0372100000565">
+            <div class="feedback__description">
+              <h3 class="feedback__header">Оценить качество услуг</h3>
+              <p class="feedback__text">Пройдите небольшой опрос в&nbsp;автоматизированной информационной системе</p>
+            </div>
+          </div>
+          <div class="feedback__content">
+            <img class="feedback__qr" src="{% static 'museum/img/qr_gu.jpg' %}" alt="https://bus.gov.ru/rate/451622">
+            <div class="feedback__description">
+              <h3 class="feedback__header">Оценить условия услуг</h3>
+              <p class="feedback__text">Пройдите небольшой опрос с&nbsp;помощью портала Госуслуг</p>
+            </div>
+          </div>
+          <div class="feedback__content">
+            <img class="feedback__qr" src="{% static 'museum/img/qr_help.jpg' %}" alt="https://qr.nspk.ru/AS1A000Q0S86V4679KSB3MQGVPD8TE5P?type=01&bank=100000000001&crc=8B6C">
+            <div class="feedback__description">
+              <h3 class="feedback__header">Помочь музею</h3>
+              <p class="feedback__text">Отправьте пожертвование на развитие музея и расширение его возможностей</p>
+            </div>
+          </div>
+        </div>
+        <div class="options">
+          <h2>Опрос</h2>
+          {% if form %}
+          <form action="" method="post">
+            {% csrf_token %}
+            <div class="form__content">
+              {{ form.as_div }}
+            </div>
+            <button type="submit">Отправить данные</button>
+          </form>
+          {% endif %}
+          {% if message %}
+          <p class="feedback__text">{{ message }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__logo"></div>
+    <div class="footer__columns">
+      <div class="footer__left-column">
+        <p class="footer__text">© "Центральный музей связи имени А.С. Попова"</p>
+        <p class="footer__text">2025 Все права защищены</p>
+        <p class="footer__text">Санкт-Петербург, Почтамтский переулок, дом 4</p>
+      </div>
+      <div class="footer__right-column">
+        <div class="footer__content">
+          <img src="{% static 'museum/img/email.svg' %}" class="footer__icon" alt="email">
+          <p class="footer__text">info@rustelecom-museum.ru</p>
+        </div>
+        <div class="footer__content">
+          <img src="{% static 'museum/img/tel.svg' %}" class="footer__icon" alt="telephone">
+          <p class="footer__text">заказ экскурсий: +7(812)571-00-60, +7(921)950-00-36</p>
+        </div>
+        <div class="footer__content footer__content__sn">
+          <a class="footer__link" href="https://vk.com/museum_svyazi" target="_blank"><img src="{% static 'museum/img/vk.svg' %}" class="footer__sn" alt="vk"></a>
+          <a class="footer__link" href="https://t.me/museum_svyazi" target="_blank"><img src="{% static 'museum/img/telegram.svg' %}" class="footer__sn" alt="telegram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="{% static 'museum/js/script.js' %}"></script>
+  <script type="text/javascript" src="{% static 'museum/js/burger.js' %}"></script>
+  <script type="text/javascript" src="{% static 'museum/js/carousel.js' %}"></script>
+
+</body>
+
+</html>

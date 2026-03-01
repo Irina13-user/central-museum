@@ -66,6 +66,10 @@
 	  line-height: 24px;
 	}
 
+	.form__content * {
+        font-size: 24px;
+    }
+
 	.form__text {
 		font-size: 24px;
 		font-weight: bold;
@@ -200,6 +204,10 @@
 	  line-height: 20px;
 	}
 
+	.form__content * {
+        font-size: 20px;
+    }
+
 	.form__text {
 		font-size: 20px;
 		font-weight: bold;
@@ -327,6 +335,10 @@
 		line-height: 16px;
 	}
 
+	model-viewer {
+        height: 50vh;
+    }
+
 	.feedback__qr {
 		width: 150px;
 		height: 150px;
@@ -336,6 +348,10 @@
 	  font-size: 16px;
 	  line-height: 20px;
 	}
+
+	.form__content * {
+        font-size: 20px;
+    }
 
 	.form__text {
 		font-size: 20px;
